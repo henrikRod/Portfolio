@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 :root {
    --xiketic : #050517;
@@ -12,15 +12,16 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: var(--nunito);
 }
 body {
    background-color: var(--xiketic);
    min-height: 100vh;
    color: #fff;
+   font-family: var(--nunito);
+   overflow-x: hidden;
 }
 h1 {
-   font-size: 2.2rem;
+   font-size: 2.5rem;
 }
 a {
    text-decoration: none;
@@ -37,15 +38,18 @@ li {
    -webkit-text-fill-color: transparent;
    -moz-text-fill-color: transparent;
 }
-#social_1{
+#social a{
    position: relative;
    visibility: hidden;
 }
-#social_2{
-   position: relative;
-   visibility: hidden;
-}  
-#social_3 {
-   position: relative;
-   visibility: hidden;
+
+#view1 { 
+   height: 100vh;
+}
+.circle {
+   clip-path: circle();
+   background: linear-gradient(45deg, var(--cerulean), var(--violet));
+   position: absolute;
+   background-size: 300%;
+   animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
 }
