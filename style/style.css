@@ -14,3 +14,38 @@
    box-sizing: border-box;
    font-family: var(--nunito);
 }
+body {
+   background-color: var(--xiketic);
+   min-height: 100vh;
+   color: #fff;
+}
+h1 {
+   font-size: 2.2rem;
+}
+a {
+   text-decoration: none;
+   color: white;
+}
+li {
+   list-style: none;
+}
+.textGradient {
+   background:  linear-gradient(90deg, var(--cerulean), var(--violet)) ;
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+#social_1{
+   position: relative;
+   visibility: hidden;
+}
+#social_2{
+   position: relative;
+   visibility: hidden;
+}  
+#social_3 {
+   position: relative;
+   visibility: hidden;
+}

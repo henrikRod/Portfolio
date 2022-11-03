@@ -6,33 +6,44 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/style.css">
    <link rel="stylesheet" href="./style/elements.css">
+   <link rel="stylesheet" href="./style/responsive.css">
+   <link rel="stylesheet" href="./style/animation.css">
+   <script src="./js/animation.js" defer></script>
    <title>Henrik-0</title>
 </head>
 <body>
    <header>
-      <a href="#">Henrik-0</a>
+      <h1>
+         <a href="#" class="textGradient">Henrik-0</a>
+      </h1>
       <nav>
          <ul>
             <li>
-               <a href="">Home</a>
+               <a href="#">Home</a>
             </li>
             <li>
-               <a href="">About</a>
+               <a href="#about">About</a>
             </li>
             <li>
-               <a href="">Skills</a>
+               <a href="#skills">Skills</a>
             </li>
             <li>
-               <a href="">Projects</a>
+               <a href="#projects">Projects</a>
             </li>
          </ul>
       </nav>
    </header>
    <main>
-      <nav>
-         <img src="./assets/linkedin_icon.svg" alt="linkedin icon">
-         <img src="./assets/github_icon.svg" alt="github icon">
-         <img src="./assets/instagram_icon.svg" alt="instagram icon">
+      <nav id="social">
+         <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank" id="social_1">
+            <img src="./assets/linkedin_icon.svg" alt="linkedin icon">
+         </a>
+         <a href="https://github.com/Henrik-0" target="_blank" id="social_2">
+            <img src="./assets/github_icon.svg" alt="github icon">
+         </a>
+         <a href="https://www.instagram.com/henrik_090/" target="_blank" id="social_3">
+            <img src="./assets/instagram_icon.svg" alt="instagram icon">
+         </a>
       </nav>
       <article id="apresentation">
          <h1>Hi, my name is <span class="textGradient">Henrik</span> 👋</h1>
@@ -43,13 +54,13 @@
          <h2 id="author"></h2>
       </section>
       <section id="about">
-         <h1 class="textGradient">About me</h1>
+         <h1><span class="textGradient">About me</span></h1>
          <p>I'm passionate about programming and I like to learn new things, especially when it comes to math or physics, I also like a little bit of hardware, and when I start, I spend hours and hours doing it.
          </p>
       </section>
       <section>
          <div>
-            <h1 class="textGradient">My skills</h1>
+            <h1 id="skills"><span class="textGradient">My skills</span></h1>
          </div>
          <article>
             <img src="./assets/javascript_icon.svg" alt="javascript icon">
@@ -58,7 +69,7 @@
             <img src="./assets/figma_icon.svg" alt="figma icon">
          </article>
       </section>
-      <section>
+      <section id="projects">
          <article>
             <div>
 
@@ -74,7 +85,7 @@
       </section>
    </main>
    <footer>
-
+      <img src="./assets/arrow.svg" alt="arrow">
    </footer>
 </body>
 </html>
