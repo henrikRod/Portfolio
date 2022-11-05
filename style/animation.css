@@ -1,8 +1,8 @@
 @keyframes linearChange{
    from {
-      background-position: top left;
+      background-position: bottom left;
    }
    to {
-      background-position: bottom right;
+      background-position: top right;
    }
 }

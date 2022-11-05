@@ -33,24 +33,31 @@ li {
 .textGradient {
    background:  linear-gradient(90deg, var(--cerulean), var(--violet)) ;
    background-size: 100%;
+   background-clip: text;
    -webkit-background-clip: text;
    -moz-background-clip: text;
    -webkit-text-fill-color: transparent;
    -moz-text-fill-color: transparent;
 }
+.circle {
+   position: absolute;
+   clip-path: circle();
+   background: linear-gradient(45deg, var(--cerulean), var(--violet));
+   background-size: 300%;
+   animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
+   z-index: -1;
+}
 #social a{
    position: relative;
    visibility: hidden;
 }
-
-#view1 { 
-   height: 100vh;
+#containerAbout {
+   width: 80vw;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly ;
 }
-.circle {
-   clip-path: circle();
-   background: linear-gradient(45deg, var(--cerulean), var(--violet));
-   position: absolute;
-   background-size: 300%;
-   animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
-   z-index: -1;
+#languages div img {
+   width: 80px;
 }
