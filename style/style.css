@@ -52,4 +52,5 @@ li {
    position: absolute;
    background-size: 300%;
    animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
+   z-index: -1;
 }
