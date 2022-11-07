@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 :root {
-   --xiketic : #050517;
+   --xiketic: #050517;
    --oxfordBlue: #071235;
    --violet: #7901A4;
-   --cerulean : #05b2dc;
+   --blueRyb: #0c3fe9;
    --garamond: 'EB Garamond', serif;
    --nunito: 'Nunito', sans-serif;
 }
-* {
+*, html, body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -19,6 +19,15 @@ body {
    color: #fff;
    font-family: var(--nunito);
    overflow-x: hidden;
+   max-width: 2000px;
+   margin: 0 auto;
+   position: relative;
+}
+main {
+   display: flex;
+   flex-direction: column;
+   gap: 200px;
+   position: relative;
 }
 h1 {
    font-size: 2.5rem;
@@ -30,34 +39,11 @@ a {
 li {
    list-style: none;
 }
-.textGradient {
-   background:  linear-gradient(90deg, var(--cerulean), var(--violet)) ;
-   background-size: 100%;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -moz-text-fill-color: transparent;
-}
-.circle {
-   position: absolute;
-   clip-path: circle();
-   background: linear-gradient(45deg, var(--cerulean), var(--violet));
-   background-size: 300%;
-   animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
-   z-index: -1;
-}
-#social a{
-   position: relative;
-   visibility: hidden;
-}
-#containerAbout {
-   width: 80vw;
-   margin: auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly ;
-}
 #languages div img {
    width: 80px;
+}
+.imgProject {
+   width: 500px;
+   height: 315px; 
+   border-radius: 5px;
 }

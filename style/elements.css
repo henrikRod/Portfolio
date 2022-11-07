@@ -1,13 +1,33 @@
+.textGradient {
+   background:  linear-gradient(90deg, var(--blueRyb), var(--violet)) ;
+   background-size: 100%;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+.circle {
+   position: absolute;
+   border-radius: 50%;
+   background: linear-gradient(45deg, var(--blueRyb), var(--violet));
+   background-size: 300%;
+   animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
+   z-index: -1;
+}
 /* header */
 header {
-   padding: 0px 80px;
+   width: 100%;
    height: 85px;
+   padding: 0px 80px;
+   background-color: var(--xiketic);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    display: flex;
    justify-content: space-between;
    align-items: center;
    position: sticky;
    top: 0px;
-   z-index: 1;
+   z-index: 2;
 }
 header nav ul {
    display: flex;
@@ -22,7 +42,7 @@ ul li a::after {
    content: "";
    width: 0%;
    height: 2px;
-   background:  linear-gradient(90deg, var(--cerulean), var(--violet)) ;
+   background:  linear-gradient(90deg, var(--blueRyb), var(--violet)) ;
    position: absolute;
    bottom: 0;
    left: 0;
@@ -37,13 +57,19 @@ ul li a:hover::after {
 #social {
    position: fixed;
    bottom: 70px;
-   left: 80px;
+   margin-left: 80px;
    display: flex;
    flex-direction: column;
    gap: 25px;
+   z-index: 1;
+}
+#social a{
+   position: relative;
+   visibility: hidden;
 }
 #view1 {
    height: calc(100vh - 85px);
+   max-height: 1200px;
    padding: 80px;
    display: grid;
    grid-template-columns: 2fr 1.5fr;
@@ -82,6 +108,11 @@ ul li a:hover::after {
 #apresentation p {
    font-size: 2.5rem;
 }
+.waving {
+   display: inline-block;
+   animation: wave 1s cubic-bezier(0.45, 0, 0.55, 1) alternate infinite;
+   transform-origin: 70% 70%;
+}
 #blockQuo {
    width: 600px;
    justify-self: center;
@@ -111,10 +142,10 @@ ul li a:hover::after {
    height: 320px;
    padding: 40px;
 
-   background-color: rgba(255, 255, 255, 0.01);
    border-radius: 15px;
    border: 3px solid transparent;
    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+   background-color: rgba(255, 255, 255, 0.01);
    background-clip: padding-box;
    backdrop-filter: blur(13px);
 
@@ -133,12 +164,47 @@ blockquote {
    letter-spacing: 3px;
 }
 
+.circle7 {
+   width: 200px;
+   height: 200px;
+   top: 30px;
+   left: -80px;
+   z-index: 0;
+}
+.circle8 {
+   width: 150px;
+   height: 150px;
+   bottom: -50px;
+   left: 600px;
+   z-index: 0;
+}
+.circle9 {
+   width: 260px;
+   height: 260px;
+   top: -50px;
+   right: 0px;
+   z-index: 0;
+}
+#containerAbout {
+   margin: auto;
+   width: 100%;
+   height: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly ;
+   background: linear-gradient(90deg,var(--oxfordBlue), var(--xiketic));
+   position: relative;
+}
 #about, #skills {
+   width: 40%;
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 60px;
-   width: 700px;  
+   gap: 50px;
+   z-index: 1;
+}
+#about h1, #skills h1 {
+   font-family: var(--garamond);
 }
 #about {
    text-align: justify; 
@@ -152,4 +218,52 @@ blockquote {
    justify-content: space-evenly;
    align-items: center;
    flex-wrap: wrap;
+   text-align: center;
+}
+
+.circle10 {
+   width: 260px;
+   height: 260px;
+   top: -80px;
+   left: 50px;
+}
+.circle11 {
+   
+}
+#projects {
+   width: 100%;
+   height: 600px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+#projects article {
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   position: relative;
+}
+#projects article p {
+   width: 500px;
+   height: 150px;
+   text-align: justify;
+}
+#projects article p {
+   font-size: 1.2rem;
+}
+
+/* footer */
+footer {
+   height: 70px;
+   padding: 0px 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+}
+footer #arrow {
+   animation: arrow 2s ease-in-out alternate infinite;
 }

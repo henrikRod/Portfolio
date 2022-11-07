@@ -6,3 +6,19 @@
       background-position: top right;
    }
 }
+@keyframes arrow {
+   from {
+      transform: translate(0px, -5px);
+   }
+   to {
+      transform: translate(0px, 5px);
+   }
+}
+@keyframes wave {
+   from {
+      transform: rotate(-10deg);
+   }
+   to {
+      transform: rotate(10deg);
+   }
+}
