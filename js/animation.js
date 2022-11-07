@@ -1,7 +1,7 @@
 const socials = document.querySelector("#social");
 const socialItems = socials.getElementsByTagName("a");
 let keySlide = {
-   transform: ['translateX(-146px)', 'translateX(0%)'],
+   transform: ['translateX(-146px)', 'translateX(none)'],
    visibility: ["hidden", "visible"]
 };
 let keyOptions =  {

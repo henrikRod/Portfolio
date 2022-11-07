@@ -9,7 +9,7 @@
 }
 .circle {
    position: absolute;
-   border-radius: 50%;
+   clip-path: circle();
    background: linear-gradient(45deg, var(--blueRyb), var(--violet));
    background-size: 300%;
    animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
@@ -21,13 +21,16 @@ header {
    height: 85px;
    padding: 0px 80px;
    background-color: var(--xiketic);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    display: flex;
    justify-content: space-between;
    align-items: center;
    position: sticky;
    top: 0px;
    z-index: 2;
+}
+header h1 {
+   font-family: var(--garamond);
 }
 header nav ul {
    display: flex;
@@ -48,7 +51,7 @@ ul li a::after {
    left: 0;
    transition: .3s ease-in-out;
 }
-ul li a:hover::after {
+ul li a:hover::after, ul li a:focus::after {
    width: 100%;
 }
 
@@ -147,7 +150,7 @@ ul li a:hover::after {
    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
    background-color: rgba(255, 255, 255, 0.01);
    background-clip: padding-box;
-   backdrop-filter: blur(13px);
+   backdrop-filter: blur(15px);
 
    font-family: var(--garamond);
    text-align: center;
@@ -172,27 +175,27 @@ blockquote {
    z-index: 0;
 }
 .circle8 {
-   width: 150px;
-   height: 150px;
-   bottom: -50px;
-   left: 600px;
+   width: 120px;
+   height: 120px;
+   bottom: -60px;
+   right: 700px;
    z-index: 0;
 }
 .circle9 {
-   width: 260px;
-   height: 260px;
-   top: -50px;
-   right: 0px;
+   width: 240px;
+   height: 240px;
+   top: -80px;
+   right: -50px;
    z-index: 0;
 }
 #containerAbout {
    margin: auto;
-   width: 100%;
    height: 600px;
    display: flex;
    align-items: center;
    justify-content: space-evenly ;
    background: linear-gradient(90deg,var(--oxfordBlue), var(--xiketic));
+   border-radius: 15px 0px 0px 15px;
    position: relative;
 }
 #about, #skills {
@@ -221,15 +224,6 @@ blockquote {
    text-align: center;
 }
 
-.circle10 {
-   width: 260px;
-   height: 260px;
-   top: -80px;
-   left: 50px;
-}
-.circle11 {
-   
-}
 #projects {
    width: 100%;
    height: 600px;
@@ -248,22 +242,30 @@ blockquote {
 }
 #projects article p {
    width: 500px;
-   height: 150px;
+   height: 160px;
+   font-size: 1.3rem;
    text-align: justify;
 }
-#projects article p {
-   font-size: 1.2rem;
+.circle10 {
+   width: 80px;
+   height: 80px;
+   bottom: 50px;
+   left: 40%;
 }
-
+.circle11 {
+   width: 200px;
+   height: 200px;
+   top: -50px;  
+   left: -100px;
+}
+.circle12 {
+   width: 200px;
+   height: 200px;
+   bottom: 140px;
+   right: -100px;
+   overflow: hidden;
+}
 /* footer */
-footer {
-   height: 70px;
-   padding: 0px 80px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 50px;
-}
 footer #arrow {
    animation: arrow 2s ease-in-out alternate infinite;
 }

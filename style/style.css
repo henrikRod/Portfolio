@@ -16,17 +16,19 @@
 body {
    background-color: var(--xiketic);
    min-height: 100vh;
+   max-width: 2000px;
    color: #fff;
    font-family: var(--nunito);
    overflow-x: hidden;
-   max-width: 2000px;
    margin: 0 auto;
    position: relative;
 }
 main {
+   animation: has-shown 2s ease-in-out forwards;
    display: flex;
    flex-direction: column;
    gap: 200px;
+   animation: has-shown 1s ease- forwards;
    position: relative;
 }
 h1 {
@@ -43,7 +45,13 @@ li {
    width: 80px;
 }
 .imgProject {
-   width: 500px;
-   height: 315px; 
-   border-radius: 5px;
+   border-radius: 10px;
+}
+footer {
+   height: 70px;
+   padding: 0px 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
 }
