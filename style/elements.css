@@ -15,6 +15,7 @@
    animation: linearChange 5s cubic-bezier(0.87, 0, 0.13, 1) alternate infinite;
    z-index: -1;
 }
+
 /* header */
 header {
    width: 100%;
@@ -237,7 +238,9 @@ blockquote {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   align-items: flex-start;
+   background: linear-gradient(0deg, var(--xiketic), var(--oxfordBlue), var(--xiketic));
+   padding: 30px;
+   border-radius: 10px;
    position: relative;
 }
 #projects article p {
@@ -263,7 +266,6 @@ blockquote {
    height: 200px;
    bottom: 140px;
    right: -100px;
-   overflow: hidden;
 }
 /* footer */
 footer #arrow {

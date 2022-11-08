@@ -24,11 +24,9 @@ body {
    position: relative;
 }
 main {
-   animation: has-shown 2s ease-in-out forwards;
    display: flex;
    flex-direction: column;
    gap: 200px;
-   animation: has-shown 1s ease- forwards;
    position: relative;
 }
 h1 {
