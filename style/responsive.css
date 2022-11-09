@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+   body {
+      overflow-x: hidden;
+   }
    header {
       display: none; 
    }
@@ -11,7 +14,7 @@
    #social {
       margin: 0;
       left: 30px;
-      bottom: 10%;
+      bottom: 20%;
       gap: 10px;
    }
    #social img {
@@ -166,6 +169,9 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
+   body {
+      overflow-x: hidden;
+   }
    header {
       padding: 0px 50px;
       height: 60px;
@@ -341,6 +347,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
+   body {
+      overflow-x: hidden;
+   }
    header {
       padding: 0px 40px;
    }
@@ -437,6 +446,9 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width:1450px) {
+   body {
+      overflow-x: hidden;
+   }
    .circle1 {
       width: 60px;
       height: 60px;
