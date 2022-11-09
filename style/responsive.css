@@ -171,8 +171,9 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
-   body {
+   html{
       overflow-x: hidden;
+      max-width: 100vw;
    }
    header {
       padding: 0px 50px;
@@ -349,8 +350,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
-   body {
+   html{
       overflow-x: hidden;
+      max-width: 100vw;
    }
    header {
       padding: 0px 40px;
@@ -448,8 +450,9 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width:1450px) {
-   body {
+   html{
       overflow-x: hidden;
+      max-width: 100vw;
    }
    .circle1 {
       width: 60px;
