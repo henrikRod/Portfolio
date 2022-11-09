@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px) {
-   body, main{
+   html{
       overflow-x: hidden;
+      max-width: 100vw;
    }
    header {
       display: none; 
@@ -14,13 +15,14 @@
    #social {
       margin: 0;
       left: 30px;
-      bottom: 20%;
+      bottom: 40px;
       gap: 10px;
    }
    #social img {
       width: 30px;
    }
    #view1 {
+      min-height: 100%;
       height: 100vh;
       padding: 30px;
       display: flex;
