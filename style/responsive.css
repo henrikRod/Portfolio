@@ -11,7 +11,7 @@
    #social {
       margin: 0;
       left: 30px;
-      bottom: 30px;
+      bottom: 10%;
       gap: 10px;
    }
    #social img {
@@ -186,7 +186,7 @@
    #social {
       margin: 0;
       left: 40px;
-      bottom: 40px;
+      bottom: 10%;
       gap: 10px;
    }
    #social img {
