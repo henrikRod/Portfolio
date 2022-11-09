@@ -61,7 +61,7 @@ ul li a:hover::after, ul li a:focus::after {
 #social {
    position: fixed;
    bottom: 70px;
-   margin-left: 80px;
+   margin-left: 70px;
    display: flex;
    flex-direction: column;
    gap: 25px;
