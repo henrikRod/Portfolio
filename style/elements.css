@@ -31,7 +31,8 @@ header {
    z-index: 2;
 }
 header h1 {
-   font-family: var(--garamond);
+   font-family: var(--titleFont);
+   font-weight: 500;
 }
 header nav ul {
    display: flex;
@@ -208,7 +209,8 @@ blockquote {
    z-index: 1;
 }
 #about h1, #skills h1 {
-   font-family: var(--garamond);
+   font-family: var(--titleFont);
+   font-weight: 500;
 }
 #about {
    text-align: justify; 
