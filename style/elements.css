@@ -22,6 +22,8 @@ header {
    height: 85px;
    padding: 0px 80px;
    background-color: var(--xiketic);
+   opacity: .6;
+   backdrop-filter: blur(40px);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    display: flex;
    justify-content: space-between;

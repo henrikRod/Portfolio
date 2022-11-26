@@ -21,10 +21,11 @@ html{
 body {
    background-color: var(--xiketic);
    min-height: 100vh;
-   max-width: 2000px;
+   /* max-width: 920px; */
    color: #fff;
    font-family: var(--parFont);
    overflow-x: hidden;
+   scroll-behavior: smooth;
    margin: 0 auto;
    position: relative;
 }
