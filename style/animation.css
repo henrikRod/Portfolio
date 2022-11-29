@@ -22,3 +22,11 @@
       transform: rotate(10deg);
    }
 }
+@keyframes strokeHover {
+   from {
+      stroke: var(--blueRyb);
+   }
+   to {
+      stroke: var(--violet);
+   }
+}
