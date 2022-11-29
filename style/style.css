@@ -69,3 +69,10 @@ footer {
    aumentar o rem dos paragrafos 
    adicionar botao para os cards
 */
+#social a svg {
+   transition: .5s;
+}
+#social a:hover svg, #social a:focus svg {
+   transform: scale(1.25);
+   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
+}

@@ -2,84 +2,84 @@ const q = document.querySelector("blockquote q");
 const author = document.querySelector("#author");
 const quotes = [
    {
-      phrase:"A new idea appears suddenly and in a more intuitive way, but intuition is nothing more than the result of previous intellectual experiences.",
+      phrase:"Uma nova ideia surge repentinamente e de forma mais intuitiva, mas a intuição nada mais é do que o resultado de experiências intelectuais anteriores.",
       author: "Albert Einstein"
    },
    {
-      phrase:"One day, ladies will take their computers for a walk in the park and say to each other, 'My little computer said such a funny thing this morning!'.",
+      phrase:"Um dia, as senhoras levarão seus computadores para passear no parque e dirão umas às outras: 'Meu computadorzinho disse uma coisa tão engraçada esta manhã!'.",
       author: "Alan Turing"
    },
    {
-      phrase:"Mathematics has something in common with poetry. It's made of real relations, real steps, real deductions, that's why it has this beauty.",
+      phrase:"A matemática tem algo em comum com a poesia. É feito de relações reais, passos reais, deduções reais, por isso tem essa beleza.",
       author: "Richard Stallman"
    },
    {
-      phrase:"With enough eyes, all bugs are superficial.",
+      phrase:"Com olhos suficientes, todos os bugs são superficiais.",
       author: "Eric Raymond"
    },
    {
-      phrase:"Politics is for the present, but an equation is for eternity.",
+      phrase:"A política é para o presente, mas uma equação é para a eternidade.",
       author: "Albert Einstein"
    },
    {
-      phrase:"The finest type of man gives himself up to discovering the meaning and purpose of life itself... this is the man i call a philosopher.",
-      author: "Pythagoras"
+      phrase:"O melhor tipo de homem se entrega a descobrir o significado e o propósito da própria vida... esse é o homem que eu chamo de filósofo.",
+      author: "Pitágoras"
    },
    {
-      phrase:"Black holes are where God divided by zero.",
+      phrase:"Os buracos negros são onde Deus divide por zero.",
       author: "Steven Wright"
    },
    {
-      phrase:"When thoughts become empty, infinity is all we see.",
+      phrase:"Quando os pensamentos se tornam vazios, o infinito é tudo o que enxergamos.",
       author: "Henrik Rodrigues"
    },
    {
-      phrase:"The higher we rise, the smaller we seem in the eyes of those who don't know how to fly.",
+      phrase:"Quanto mais subimos, menores parecemos aos olhos de quem não sabe voar.",
       author: "Friedrich Nietzsche"
    },
    {
-      phrase:"Success breeds complacency. Complacency breeds failure. Only the paranoid survive.",
+      phrase:"O sucesso leva à complacência. A complacência leva ao fracasso. Só os paranóicos sobrevivem.",
       author: "Andy Grove"
    },
    {
-      phrase:"The eyes of the spirit only begin to be penetrating when those of the body begin to weaken.",
-      author: "Plato"
+      phrase:"Os olhos do espírito só começam a ser penetrantes quando os do corpo começam a enfraquecer.",
+      author: "Platão"
    },
    {
-      phrase:"After a certain point, money is no longer the objective. The interesting is the game.",
-      author: "Aristotle Onassis"
+      phrase:"A partir de certo ponto, o dinheiro deixa de ser o objetivo. O interessante é o jogo.",
+      author: "Aristóteles Onassis"
    },
    {
-      phrase:"Sad time! It is easier to disintegrate an atom than a prejudice.",
+      phrase:"Tempo triste! É mais fácil desintegrar um átomo do que um preconceito.",
       author: "Albert Einstein"
    },
    {
-      phrase:"The wise man never says everything he thinks, but always thinks everything he says.",
-      author: "Aristotle"
+      phrase:"O sábio nunca diz tudo o que pensa, mas sempre pensa tudo o que diz.",
+      author: "Aristóteles"
    },
    {
-      phrase:"Act before you speak and therefore speak according to your actions.",
-      author: "Confucius"
+      phrase:"Aja antes de falar e, portanto, fale de acordo com suas ações.",
+      author: "Confúcio"
    },
    {
-      phrase:"The most dangerous enemy you will ever encounter will always be yourself.",
+      phrase:"O inimigo mais perigoso que você encontrará sempre será você mesmo.",
       author: "Friedrich Nietzsche"
    },
    {
-      phrase:"The first duty of intelligence is to doubt itself.",
+      phrase:"O primeiro dever da inteligência é duvidar de si mesma.",
       author: "Albert Einstein"
    },
    {
-      phrase:"Conquering is not enough. You have to know how to seduce.",
+      phrase:"Conquistar não é suficiente. Você tem que saber como seduzir.",
       author: "Voltaire"
    },
    {
-      phrase:"Silence is a friend that never betrays.",
-      author: "Confucius"
+      phrase:"O silêncio é um amigo que nunca trai.",
+      author: "Confúcio"
    },
    {
-      phrase:"Listen and you will be wise. The beginning of wisdow is the silence.",
-      author: "Pythagoras"
+      phrase:"Ouça e você será sábio. O começo da sabedoria é o silêncio.",
+      author: "Pitágoras"
    }
 ];
 const quoteOpac = {

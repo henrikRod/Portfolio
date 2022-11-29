@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
    <meta name="description" content="Hi, my name is Henrik. I'm 16 years old, and this is my portfolio :).">
    <link rel="stylesheet" href="./style/style.css">
    <link rel="shortcut icon" href="./assets/portfolio.png" type="image/x-icon">
+   <script src="js/svg-inject.min.js"></script>
    <title>Henrik</title>
 </head>
 <body>
@@ -18,16 +19,16 @@
       <nav>
          <ul>
             <li>
-               <a href="#">Home</a>
+               <a href="#">Início</a>
             </li>
             <li>
-               <a href="#containerAbout">About</a>
+               <a href="#containerAbout">Sobre</a>
             </li>
             <li>
-               <a href="#containerAbout">Skills</a>
+               <a href="#containerAbout">Habilidades</a>
             </li>
             <li>
-               <a href="#projects">Projects</a>
+               <a href="#projects">Projetos</a>
             </li>
          </ul>
       </nav>
@@ -35,13 +36,13 @@
    </header>
    <nav id="social">
       <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank">
-         <img src="./assets/linkedin_icon.svg" alt="linkedin icon">
+         <img src="./assets/linkedin_icon.svg" alt="linkedin icon" onload="SVGInject(this)">
       </a>
       <a href="https://github.com/Henrik-0" target="_blank">
-         <img src="./assets/github_icon.svg" alt="github icon">
+         <img src="./assets/github_icon.svg" alt="github icon" onload="SVGInject(this)">
       </a>
       <a href="https://www.instagram.com/henrik_090/" target="_blank">
-         <img src="./assets/instagram_icon.svg" alt="instagram icon">
+         <img src="./assets/instagram_icon.svg" alt="instagram icon" onload="SVGInject(this)">
       </a>
    </nav>
    <main>
@@ -50,8 +51,8 @@
          <div class="circle circle2"></div>
          <div class="circle circle3"></div>
          <article id="apresentation">
-            <h1>Hi, my name is <span class="textGradient">Henrik</span> <span class="waving">&#x1F44B</span></h1>
-            <p>I'm <span class="textGradient">16</span> years old, and i'm a web developer.</p>
+            <h1>Oi, meu nome é <span class="textGradient">Henrik</span> <span class="waving">&#x1F44B</span></h1>
+            <p>Eu tenho <span class="textGradient">16</span> Anos, e sou um desenvolvedor web.</p>
          </article>
          
          <aside id="blockQuo">
@@ -72,13 +73,17 @@
          <div class="circle circle8"></div>
          <div class="circle circle9"></div>
          <article id="about">
-            <h1>About me</h1>
-            <p>I'm in the 2nd year of high school and I'm passionate about programming and I like to learn new things, especially when it comes to math or physics, I also like a little bit of hardware, and when I start I spend hours and hours doing it.
+            <h1>Sobre mim</h1>
+            <p>
+               Eu estou no segundo ano do ensino médio, gosto muito de programar e de aprender coisas novas, principalmente quando envolve matemática ou física. 
+            </p>
+            <p>
+               Outrossim sempre gostei do hardware, tanto é que desde criança, eu vivia desmontando coisas velhas para montar outras. Pretendo aprender mais sobre arduino, pois ele abre um mundo de possibilidades.
             </p>
          </article>
          <aside id="skills">
             <section>
-               <h1>My skills</h1>
+               <h1>Minhas habilidades</h1>
             </section>
    
             <article id="languages">
@@ -112,7 +117,7 @@
                   <img src="./assets/areaCalculation.png" alt="Website: calculate-area-of-plane-figures" class="imgProject">
                </a>
             </div>
-            <p>This is one of my first projects, I really enjoyed doing it, there is probably another easier way to do it, so at some point I intend to redo it and make some additions. This was the subject I had been studying for some time, and as I said, I love math :).</p>
+            <p>Esse é um dos meus primeiros projetos, gostei muito de fazer ele, mas provavelmente há alguma maneira mais fácil de fazê-lo, então em algum momento pretendo projetá-lo denovo. Esse foi o conteúdo que eu estava estudando, então, foi bem prático.</p>
          </article>
          <article>
             <div class="circle circle12"></div> 
@@ -121,13 +126,13 @@
                   <img src="./assets/pokedex.png" alt="Website: Pokedex" class="imgProject">
                </a>
             </div>
-            <p>Pokémon is a really cool anime, and one of the first i watched, so why not make this project? I did it following a video on youtube: <a href="https://www.youtube.com/watch?v=SjtdH3dWLa8&ab_channel=ManualdoDev" target="_blank">Dev Manual.</a> It's a really cool project and as I was studying APIs, I decided to make a project to practice.
+            <p>Pokemon é um anime muito bacana, e um dos primeiros que eu assisti, então porque nao fazer esse projeto? Eu fiz ele seguindo um vídeo no youtube: <a href="https://www.youtube.com/watch?v=SjtdH3dWLa8&ab_channel=ManualdoDev" target="_blank">Manual do dev.</a> É um projeto muito legal, e um bom exercício para praticar o uso de APIs.
             </p>
          </article>
       </section>
    </main>
    <footer>
-      <p>Made by Henrik &lt;3</p>
+      <p>Feito por Henrik &lt;3</p>
       <a href="#"><img src="./assets/arrow.svg" alt="arrow" id="arrow"></a>
    </footer>
    

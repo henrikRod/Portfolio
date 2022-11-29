@@ -68,14 +68,14 @@ ul li a:hover::after, ul li a:focus::after {
    display: flex;
    flex-direction: column;
    gap: 25px;
-   z-index: 1;
+   z-index: 2;
 }
 #social a{
    position: relative;
    visibility: hidden;
 }
 #view1 {
-   height: calc(100vh - 85px);
+   height: 100vh;
    max-height: 1200px;
    padding: 80px;
    display: grid;
