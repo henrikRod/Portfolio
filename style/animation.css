@@ -1,8 +1,10 @@
 @keyframes linearChange{
    from {
+      transform: scale(.9);
       background-position: bottom left;
    }
    to {
+      transform: scale(1);
       background-position: top right;
    }
 }

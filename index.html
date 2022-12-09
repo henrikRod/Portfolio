@@ -34,19 +34,19 @@
       </nav>
       
    </header>
-   <nav id="social">
-      <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank">
-         <img src="./assets/linkedin_icon.svg" alt="linkedin icon" onload="SVGInject(this)">
-      </a>
-      <a href="https://github.com/Henrik-0" target="_blank">
-         <img src="./assets/github_icon.svg" alt="github icon" onload="SVGInject(this)">
-      </a>
-      <a href="https://www.instagram.com/henrik_090/" target="_blank">
-         <img src="./assets/instagram_icon.svg" alt="instagram icon" onload="SVGInject(this)">
-      </a>
-   </nav>
    <main>
       <section id="view1">
+         <nav id="social">
+            <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank">
+               <img src="./assets/linkedin_icon.svg" alt="linkedin icon" onload="SVGInject(this)">
+            </a>
+            <a href="https://github.com/Henrik-0" target="_blank">
+               <img src="./assets/github_icon.svg" alt="github icon" onload="SVGInject(this)">
+            </a>
+            <a href="https://www.instagram.com/henrik_090/" target="_blank">
+               <img src="./assets/instagram_icon.svg" alt="instagram icon" onload="SVGInject(this)">
+            </a>
+         </nav>
          <div class="circle circle1"></div>
          <div class="circle circle2"></div>
          <div class="circle circle3"></div>
@@ -68,44 +68,48 @@
          </aside>
       </section>
 
-      <section id="containerAbout">
+      <section id="about">
          <div class="circle circle7"></div>
          <div class="circle circle8"></div>
          <div class="circle circle9"></div>
-         <article id="about">
+         <article id="aboutText">
             <h1>Sobre mim</h1>
             <p>
-               Eu estou no segundo ano do ensino médio, gosto muito de programar e de aprender coisas novas, principalmente quando envolve matemática ou física. 
+               Eu estou no segundo ano do ensino médio, gosto muito de programar e de aprender coisas novas, principalmente quando envolve matemática ou física.
             </p>
             <p>
-               Outrossim sempre gostei do hardware, tanto é que desde criança, eu vivia desmontando coisas velhas para montar outras. Pretendo aprender mais sobre arduino, pois ele abre um mundo de possibilidades.
+               Outrossim sempre gostei do hardware, tanto é que desde criança, eu vivo desmontando coisas velhas para montar outras. Pretendo aprender mais sobre arduino, pois ele abre um mundo de possibilidades.
             </p>
          </article>
-         <aside id="skills">
-            <section>
-               <h1>Minhas habilidades</h1>
-            </section>
-   
-            <article id="languages">
-               <div>
-                  <img src="./assets/javascript_icon.svg" alt="javascript icon">
-                  <p>Javascript</p>
-               </div>
-               <div>
-                  <img src="./assets/html_icon.svg" alt="html icon">
-                  <p>Html</p>
-               </div>
-               <div>
-                  <img src="./assets/css_icon.svg" alt="css icon">
-                  <p>Css</p>
-               </div>
-               <div>
-                  <img src="./assets/figma_icon.svg" alt="figma icon">
-                  <p>Figma</p>
-               </div>
-            </article>
+         <aside id="containerPic">
+            <img src="./assets/pictureAbout.jpeg" alt="Minha foto" id="myPicture">
          </aside>
       </section>
+
+      <aside id="skills">
+         <section>
+            <h1>Minhas habilidades</h1>
+         </section>
+
+         <article id="languages">
+            <div>
+               <img src="./assets/javascript_icon.svg" alt="javascript icon">
+               <p>Javascript</p>
+            </div>
+            <div>
+               <img src="./assets/html_icon.svg" alt="html icon">
+               <p>Html</p>
+            </div>
+            <div>
+               <img src="./assets/css_icon.svg" alt="css icon">
+               <p>Css</p>
+            </div>
+            <div>
+               <img src="./assets/figma_icon.svg" alt="figma icon">
+               <p>Figma</p>
+            </div>
+         </article>
+      </aside>
 
 
       <section id="projects">
@@ -118,7 +122,12 @@
                </a>
             </div>
             <p>Esse é um dos meus primeiros projetos, gostei muito de fazer ele, mas provavelmente há alguma maneira mais fácil de fazê-lo, então em algum momento pretendo projetá-lo denovo. Esse foi o conteúdo que eu estava estudando, então, foi bem prático.</p>
+            <aside>
+               <a href="#" class="btnProjects">Veja no github</a>
+               <a href="#" class="btnProjects">Veja no site</a>
+            </aside>
          </article>
+
          <article>
             <div class="circle circle12"></div> 
             <div>
@@ -128,6 +137,11 @@
             </div>
             <p>Pokemon é um anime muito bacana, e um dos primeiros que eu assisti, então porque nao fazer esse projeto? Eu fiz ele seguindo um vídeo no youtube: <a href="https://www.youtube.com/watch?v=SjtdH3dWLa8&ab_channel=ManualdoDev" target="_blank">Manual do dev.</a> É um projeto muito legal, e um bom exercício para praticar o uso de APIs.
             </p>
+            <aside>
+               <a href="#" class="btnProjects">Veja no github</a>
+               <a href="#" class="btnProjects">Veja no site</a>
+            </aside>
+
          </article>
       </section>
    </main>

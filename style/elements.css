@@ -19,6 +19,7 @@
 /* header */
 header {
    width: 100%;
+   max-width: 1920px;
    height: 60px;
    padding: 0px 80px;
    background-color: rgba(255, 255, 255, 0.005);
@@ -33,16 +34,16 @@ header {
 }
 header h1 {
    font-family: var(--titleFont);
-   font-weight: 500;
+   font-weight: 400;
 }
 header nav ul {
    display: flex;
    gap: 70px;
-   font-size: 1.25rem;
 }
 ul li a{
-   padding: 15px 10px;
+   padding: 20px 10px;
    position: relative;
+   font: normal 300 1.2rem var(--titleFont);
 }
 ul li a::after {
    content: "";
@@ -61,9 +62,9 @@ ul li a:hover::after, ul li a:focus::after {
 /* main */
 
 #social {
-   position: fixed;
+   position: absolute;
    bottom: 70px;
-   margin-left: 70px;
+   left: 70px;
    display: flex;
    flex-direction: column;
    gap: 25px;
@@ -78,15 +79,14 @@ ul li a:hover::after, ul li a:focus::after {
 }
 #social a:hover svg{
    transform: scale(1.25);
-   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, .5));
+   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, .2));
 }
 #social a svg path, #social a svg path {
    transition: all .5s;
 }
 #social a:hover svg path{
-   stroke: var(--blueRyb);
-   animation: strokeHover 1.5s ease-in-out alternate infinite;
-   fill: transparent;
+   animation: strokeHover 1s ease-in-out alternate infinite;
+   fill: var(--xiketic);
 }
 
 #view1 {
@@ -125,11 +125,10 @@ ul li a:hover::after, ul li a:focus::after {
    grid-area: apre;
 }
 #apresentation h1 {
-   font-size: 3rem;
-   font-weight: normal;
+   font: normal 300 3.5rem var(--titleFont);
 }
 #apresentation p {
-   font-size: 2.5rem;
+   font: normal 300 2.7rem var(--titleFont);
 }
 .waving {
    display: inline-block;
@@ -192,49 +191,81 @@ blockquote {
    height: 200px;
    top: 30px;
    left: -80px;
-   z-index: 0;
 }
 .circle8 {
    width: 120px;
    height: 120px;
    bottom: -60px;
    right: 700px;
-   z-index: 0;
 }
 .circle9 {
    width: 240px;
    height: 240px;
    top: -80px;
    right: -50px;
-   z-index: 0;
-}
-#containerAbout {
-   margin: auto;
-   height: 600px;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly ;
-   background: linear-gradient(90deg,var(--oxfordBlue), var(--xiketic));
-   border-radius: 15px 0px 0px 15px;
-   position: relative;
-}
-#about, #skills {
-   width: 40%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 50px;
-   z-index: 1;
-}
-#about h1, #skills h1 {
-   font-family: var(--titleFont);
-   font-weight: 500;
 }
 #about {
-   text-align: justify; 
+   width: 100%;
+   padding: 50px 80px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: rgba(7, 18, 53, 0.5);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-#about p{
+#aboutText {
+   display: flex;
+   flex-direction: column;
+   width: 1000px;
+   gap: 20px;
+}
+#aboutText h1{
+   font-family: var(--titleFont);
+   font-weight: 500;
+   align-self: center;
+}
+#aboutText p{
+   font-family: var(--parFont);
    font-size: 1.3rem;
+   text-align: justify;    
+}
+#myPicture {
+   width: 200px;
+   position: relative;
+   z-index: 2;
+   border-radius: 5px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#containerPic {
+   position: relative;
+   margin: 20px;
+}
+#containerPic::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border: 3px solid;
+   border-image: linear-gradient(135deg, var(--xiketic), var(--blueRyb));
+   border-image-slice: 1;
+   position: absolute;
+   right: -20px;
+   bottom: -20px;
+   z-index: 0;
+}
+#containerPic::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border-width: 3px;
+   border-style: solid;
+   border-image: linear-gradient(135deg, var(--blueRyb), var(--xiketic));
+   border-image-slice: 1;
+   border-radius: inherit;
+   position: absolute;
+   left: -20px;
+   top: -20px;
+   z-index: 0;
 }
 #languages {
    width: 100% ;
@@ -249,15 +280,15 @@ blockquote {
    width: 100%;
    height: 600px;
    display: flex;
+   justify-content: space-around;
    align-items: center;
    position: relative;
 }
 #projects article {
-   margin: 0 auto;
-   height: 100%;
+   height: 650px;
    display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   justify-content: space-around;
    background: linear-gradient(0deg, var(--xiketic), var(--oxfordBlue), var(--xiketic));
    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
    padding: 30px;
@@ -266,9 +297,44 @@ blockquote {
 }
 #projects article p {
    width: 500px;
-   height: 160px;
-   font-size: 1.3rem;
+   font-size: 1.2rem;
+   font-family: var(--parFont);
    text-align: justify;
+}
+#projects aside {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+#projects aside .btnProjects {
+   display: block;
+   padding: 15px 30px;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid var(--violet);
+   position: relative;
+   overflow: hidden;
+   transition: 1s ease-in-out;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+   z-index: 1;
+}
+#projects aside .btnProjects::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 110%;
+   height: 0;
+   transform: translate(-50%, -50%) rotate(45deg);
+   background-color: var(--violet);
+   z-index: -1;
+   transition: 1s ease-in-out;
+}
+#projects aside .btnProjects:hover::before {
+   height: 300%;
+}
+#projects aside .btnProjects:hover {
+   
 }
 .circle10 {
    width: 80px;
@@ -291,4 +357,7 @@ blockquote {
 /* footer */
 footer #arrow {
    animation: arrow 2s ease-in-out alternate infinite;
+}
+footer p {
+   font-family: var(--parFont);
 }
