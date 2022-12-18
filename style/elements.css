@@ -205,7 +205,7 @@ blockquote {
    right: -50px;
 }
 #about {
-   width: 100%;
+   min-width: 100%;
    padding: 50px 80px;
    position: relative;
    display: flex;
@@ -217,7 +217,7 @@ blockquote {
 #aboutText {
    display: flex;
    flex-direction: column;
-   width: 1000px;
+   max-width: 1000px;
    gap: 20px;
 }
 #aboutText h1{
@@ -238,13 +238,17 @@ blockquote {
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 #containerPic {
+   width: 200px;
+   height: 316px;
    position: relative;
    margin: 20px;
 }
 #containerPic::after {
    content: "";
    width: 100%;
+   min-width: 200px;
    height: 100%;
+   min-height: 316px;
    border: 3px solid;
    border-image: linear-gradient(135deg, var(--xiketic), var(--blueRyb));
    border-image-slice: 1;
@@ -256,7 +260,9 @@ blockquote {
 #containerPic::before {
    content: "";
    width: 100%;
+   min-width: 200px;
    height: 100%;
+   min-height: 316px;
    border-width: 3px;
    border-style: solid;
    border-image: linear-gradient(135deg, var(--blueRyb), var(--xiketic));
@@ -267,13 +273,37 @@ blockquote {
    top: -20px;
    z-index: 0;
 }
-#languages {
-   width: 100% ;
-   display:flex;
-   justify-content: space-evenly;
+
+#skills {
+   width: 500px;
+   padding: 20px;
+   height: 220px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
    align-items: center;
-   flex-wrap: wrap;
-   text-align: center;
+   justify-content: space-between;
+   background-image: linear-gradient(90deg, transparent, var(--oxfordBlue), transparent);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+}
+#skills h1 {
+   font-family: var(--titleFont);
+   font-weight: 500;
+}
+#skills #languages {
+   display: flex;
+   align-items: center;
+   gap: 35px;
+}
+#skills #languages div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#skills #languages div p {
+   font-family: var(--parFont);
+   font-weight: 300;
 }
 
 #projects {
@@ -308,14 +338,14 @@ blockquote {
 }
 #projects aside .btnProjects {
    display: block;
+   font-family: var(--parFont);
    padding: 15px 30px;
    color: white;
    border-radius: 5px;
-   border: 1px solid var(--violet);
    position: relative;
    overflow: hidden;
-   transition: 1s ease-in-out;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+   transition: .5s ease-in-out;
+   box-shadow: 0px 0px 10px var(--blueRyb);
    z-index: 1;
 }
 #projects aside .btnProjects::before {
@@ -326,15 +356,17 @@ blockquote {
    width: 110%;
    height: 0;
    transform: translate(-50%, -50%) rotate(45deg);
-   background-color: var(--violet);
+   /* background-color: linear-gradient(); */
+   background-image : linear-gradient(90deg, var(--blueRyb), var(--violet));
    z-index: -1;
-   transition: 1s ease-in-out;
+   transition: .5s ease-in-out;
+}
+#projects aside .btnProjects:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 0px 10px black;
 }
 #projects aside .btnProjects:hover::before {
    height: 300%;
-}
-#projects aside .btnProjects:hover {
-   
 }
 .circle10 {
    width: 80px;
