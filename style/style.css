@@ -54,6 +54,13 @@ li {
 .imgProject {
    border-radius: 10px;
 }
+.arrowCard img {
+   width: 30px;
+}
+button {
+   background: none;
+   border: none;
+}
 footer {
    height: 70px;
    margin-top: 80px;

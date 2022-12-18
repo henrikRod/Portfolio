@@ -283,9 +283,6 @@ blockquote {
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
-   background-image: linear-gradient(90deg, transparent, var(--oxfordBlue), transparent);
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-   border-radius: 10px;
 }
 #skills h1 {
    font-family: var(--titleFont);
@@ -308,45 +305,77 @@ blockquote {
 
 #projects {
    width: 100%;
-   height: 600px;
+   margin: auto;
    display: flex;
-   justify-content: space-around;
    align-items: center;
-   position: relative;
+   justify-content: space-evenly;
 }
-#projects article {
-   height: 650px;
+#projects article .face {
+   width: 500px ;
+   height: 315px;
+   
+   transition: .5s;
+}
+#projects article .face.face1 {
+   position: relative;
+   z-index: 1;
+   transform: translateY(120px);
+}
+#projects article:hover .face.face1{
+   transform: translateY(0);
+}
+#projects article:hover .imgProject {
+   border-radius: 10px 10px 0 0 ;
+}
+#projects article .face.face2 {
+   height: 100%;
+   padding: 20px 20px 0px 20px ;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
-   background: linear-gradient(0deg, var(--xiketic), var(--oxfordBlue), var(--xiketic));
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-   padding: 30px;
-   border-radius: 10px;
-   position: relative;
+   align-items: center;
+   gap: 20px;
+   border-radius: 0 0 10px 10px ;
+   background-color: var(--oxfordBlue);
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+   transform: translateY(-120px);
 }
-#projects article p {
-   width: 500px;
-   font-size: 1.2rem;
+#projects article:hover .face.face2 {
+   transform: translateY(0px);
+}
+#projects article .face.face2 p {
    font-family: var(--parFont);
-   text-align: justify;
 }
+#projects article .arrowCard {
+   padding: 5px;
+   transform: rotate(180deg);
+   transition: .5s;
+}
+#projects article:hover .arrowCard {
+   transform: rotate(0);
+}
+
 #projects aside {
    width: 100%;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
 }
 #projects aside .btnProjects {
-   display: block;
+   width: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    font-family: var(--parFont);
-   padding: 15px 30px;
    color: white;
    border-radius: 5px;
    position: relative;
    overflow: hidden;
    transition: .5s ease-in-out;
-   box-shadow: 0px 0px 10px var(--blueRyb);
-   z-index: 1;
+   box-shadow: 2px 2px 0px var(--violet), -2px -2px 0px var(--blueRyb);
+}
+#projects aside .btnProjects a {
+   width: 150px;
+   padding: 15px 0;
+   font-size: .9rem;
 }
 #projects aside .btnProjects::before {
    content: "";
@@ -356,14 +385,13 @@ blockquote {
    width: 110%;
    height: 0;
    transform: translate(-50%, -50%) rotate(45deg);
-   /* background-color: linear-gradient(); */
    background-image : linear-gradient(90deg, var(--blueRyb), var(--violet));
    z-index: -1;
    transition: .5s ease-in-out;
 }
 #projects aside .btnProjects:hover {
    transform: scale(1.1);
-   box-shadow: 0px 0px 10px black;
+   box-shadow: none;
 }
 #projects aside .btnProjects:hover::before {
    height: 300%;
