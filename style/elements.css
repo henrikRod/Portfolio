@@ -32,9 +32,9 @@ header {
    top: 0px;
    z-index: 3;
 }
-header h1 {
-   font-family: var(--titleFont);
-   font-weight: 400;
+header h1, header h1 a{
+   display: flex;
+   align-items: center;
 }
 header nav ul {
    display: flex;
@@ -277,12 +277,12 @@ blockquote {
 #skills {
    width: 500px;
    padding: 20px;
-   height: 220px;
    margin: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   gap: 40px;
+   position: relative;
 }
 #skills h1 {
    font-family: var(--titleFont);
@@ -294,14 +294,27 @@ blockquote {
    gap: 35px;
 }
 #skills #languages div {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   position: relative;
 }
-#skills #languages div p {
-   font-family: var(--parFont);
-   font-weight: 300;
+#skills #languages div:nth-child(1){
+   animation: languageWave 1s ease-in-out alternate infinite;
 }
+#skills #languages div:nth-child(2){
+   animation: languageWave 1s .3s ease-in-out alternate infinite;
+}
+#skills #languages div:nth-child(3){
+   animation: languageWave 1s .6s ease-in-out alternate infinite;
+}
+#skills #languages div:nth-child(4){
+   animation: languageWave 1s .9s ease-in-out alternate infinite;
+}
+.circle10 {
+   width: 150px;
+   height: 150px;
+   right: -350px;
+   bottom: -120px;
+}
+
 
 #projects {
    width: 100%;
@@ -309,6 +322,9 @@ blockquote {
    display: flex;
    align-items: center;
    justify-content: space-evenly;
+}
+#projects article {
+   position: relative;
 }
 #projects article .face {
    width: 500px ;
@@ -323,9 +339,6 @@ blockquote {
 }
 #projects article:hover .face.face1{
    transform: translateY(0);
-}
-#projects article:hover .imgProject {
-   border-radius: 10px 10px 0 0 ;
 }
 #projects article .face.face2 {
    height: 100%;
@@ -396,19 +409,19 @@ blockquote {
 #projects aside .btnProjects:hover::before {
    height: 300%;
 }
-.circle10 {
+.circle11 {
    width: 80px;
    height: 80px;
    bottom: 50px;
    left: 40%;
 }
-.circle11 {
+.circle12 {
    width: 200px;
    height: 200px;
    top: -50px;  
    left: -100px;
 }
-.circle12 {
+.circle13 {
    width: 200px;
    height: 200px;
    bottom: 140px;

@@ -32,3 +32,11 @@
       stroke: var(--violet);
    }
 }
+@keyframes languageWave {
+   from {
+      transform: translateY(0px);
+   }
+   to {
+      transform: translateY(40px);
+   }
+}

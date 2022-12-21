@@ -52,7 +52,7 @@ li {
    width: 80px;
 }
 .imgProject {
-   border-radius: 10px;
+   border-radius: 10px 10px 0px 0px ;
 }
 .arrowCard img {
    width: 30px;
