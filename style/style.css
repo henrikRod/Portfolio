@@ -48,9 +48,6 @@ a {
 li {
    list-style: none;
 }
-#languages div img {
-   width: 80px;
-}
 .imgProject {
    border-radius: 10px 10px 0px 0px ;
 }
@@ -60,13 +57,4 @@ li {
 button {
    background: none;
    border: none;
-}
-footer {
-   height: 70px;
-   margin-top: 80px;
-   padding: 0px 80px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 50px;
 }

@@ -1,10 +1,11 @@
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
    html{
       overflow-x: hidden;
       max-width: 100vw;
    }
-   header {
-      display: none; 
+   header { 
+      display: none;
    }
    h1 {
       font-size: 1.7rem;
@@ -13,7 +14,6 @@
       gap: 100px;
    }
    #social {
-      margin: 0;
       left: 30px;
       bottom: 40px;
       gap: 10px;
@@ -22,9 +22,8 @@
       width: 30px;
    }
    #view1 {
-      min-height: 100%;
-      margin: 0;
       height: 100vh;
+      margin: 0;
       padding: 30px;
       display: flex;
       flex-direction: column;
@@ -60,8 +59,7 @@
       width: 100%;
    }
    #quotes {
-      height: 100%;
-      min-height: 220px;
+      height: 250px;
       padding: 20px;
    }
    #quotes q {
@@ -87,10 +85,19 @@
    }
    #about {
       flex-direction: column;
+      gap: 30px;
+      padding: 40px;
+   }
+   #aboutText p {
+      font-size: 1.1rem;
+      font-weight: 300;
+   }
+   #aboutText h1 {
+      font-size: 1.7rem;
    }
    #containerPic {
-      width: 150px;
-      height: 158px;
+      width: auto;
+      height: 100%;
    }
    #myPicture {
       width: 150px;
@@ -125,7 +132,19 @@
       top: 50%;
       right: -15%;
    }
-
+   #skills {
+      width: 100%;
+      padding: 30px;
+   }
+   #skills h1 {
+      font-size: 1.7rem;
+   }
+   #skills #languages {
+      gap: 10px;
+   }
+   #languages div img {
+      width: 60px;
+   }
    #projects {
       height: 100%;
       width: 100%;
@@ -150,24 +169,50 @@
       left: -15%;
       right: unset;
    }
-   #projects article {
-      width: 100%;
-   }
-   #projects article p {
+   
+   #projects article, #projects article .face{
       width: 100%;
       height: 100%;
-      max-height: 100%;
-      font-size: 1.1rem;
+   }
+   #projects article .face.face1 {
+      height: 100%;
+   }
+   #projects article .face.face1, #projects article .face.face2{
+      transform: translateY(0) ;
+   }
+   #projects article .face.face2 {
+      margin-top: -5px;
+      padding: 20px;
+   }
+   #projects article .face.face2 p{
+      font-size: .9rem;
+   }
+   #projects article .arrowCard {
+      display: none;
+   }
+   #projects aside  {
+      justify-content: space-evenly;
+   }
+   #projects aside .btnProjects{
+      width: 100px;
    }
    .imgProject {
       width: 100%;
    }
    footer {
-      padding: 0px 30px;
+      padding: 0px 10px;
+      justify-content: space-evenly;
+   }
+   footer p {
+      font-size: .9rem;
+   }
+   footer #arrow {
+      width: 50px;
    }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px){
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
    html{
       overflow-x: hidden;
       max-width: 100vw;
@@ -347,7 +392,8 @@
    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px){
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
    html{
       overflow-x: hidden;
       max-width: 100vw;
@@ -448,7 +494,8 @@
    }
 }
 
-@media only screen and (min-width: 1200px) and (max-width:1450px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
    html{
       overflow-x: hidden;
       max-width: 100vw;
@@ -511,3 +558,15 @@
       width: 100%;
    }
 }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+}
+
+
+
+
+
+
+
+
