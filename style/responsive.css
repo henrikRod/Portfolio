@@ -210,7 +210,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px){
    html{
       overflow-x: hidden;
       max-width: 100vw;
@@ -377,30 +377,137 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
    html{
       overflow-x: hidden;
       max-width: 100vw;
    }
    header {
+      display: flex;
+      justify-content: space-evenly;
       padding: 0px 40px;
-      width: 100vw;
    }
-   header h1 {
-      font-size: 2rem;
+   header h1 img {
+      width: 110px;
+   }
+   header nav ul {
+      justify-content: unset;
+      gap: 50px;
    }
    #social {
-      margin: 0;
-      left: 50px;
+      left: 40px;
    }
    #social img {
       width: 40px;
    }
-
+   
    #view1 {
-      height: calc(100vh - 60px);
-      padding: 50px; 
-      grid-template-columns: 1fr 1fr;
+      padding: 40px; 
+      display: grid;
+      grid-template-areas: 
+      "apre apre ."
+      ". blockQuo blockQuo";
+      grid-template-columns: 1.5fr 2fr 1fr;
+      grid-template-rows: 1fr 3fr;
+   }
+   #apresentation h1 {
+      font-size: 2rem;
+   } 
+   #apresentation p {
+      font-size: 1.7rem;
+   }
+   #blockQuo, #quotes {
+      max-width: 600px;
+      width: 100%;
+   }
+   #quotes {
+      height: 300px;
+      padding: 20px;
+   }
+   #quotes q {
+      font-size: 1.4rem;
+   }
+   #quotes #author {
+      font-size: 2rem;
+   }
+   .circle1 {
+      width: 60px;
+      height: 60px;
+      top: 0px;
+   }
+   .circle2 {
+      width: 130px;
+      height: 130px;
+      top: 20px;
+   }
+   .circle3 {
+      width: 80px;
+      height: 80px;
+      bottom: -10px;
+      left: 20%;
+      right: unset;
+   }
+   .circle4 {
+      width: 190px;
+      height: 190px;
+      right: -20%;
+      top: -25%;
+   }
+   .circle5 {
+      display: block;
+   }
+   .circle6 {
+      width: 110px;
+      height: 110px;
+      bottom: -10%;
+      left: -50px;
+   }
+   #about {
+      padding: 40px;
+      gap: 50px;
+   }
+   #about p {
+      font-size: 1.2rem;
+   }
+   #about h1, #skills h1{
+      font-size: 2rem;
+   }
+   #projects {
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px;
+   }
+   #projects article, #projects article .face{
+      width: 500px;
+      height: 100%;
+   }
+   #projects article .face.face1, #projects article .face.face2{
+      transform: translateY(0) ;
+   }
+   #projects article .face.face2 {
+      margin-top: -5px;
+      padding: 20px;
+   }
+   #projects article .face.face2 p{
+      font-size: .9rem;
+   }
+   #projects article .arrowCard {
+      display: none; 
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+   html{
+      overflow-x: hidden;
+      max-width: 100vw;
+   }
+   #view1 {
+      padding: 40px; 
+      grid-template-areas: 
+      "apre apre ."
+      ". blockQuo blockQuo";
+      grid-template-columns: 1.5fr 2fr 1fr;
       grid-template-rows: 1fr 3fr;
    }
    .circle1 {
@@ -426,63 +533,83 @@
       right: -20%;
       top: -25%;
    }
-   .circle5 {
-      display: none;
-   }
    .circle6 {
       width: 110px;
       height: 110px;
       bottom: -10%;
       left: -50px;
    }
+   header h1 img {
+      width: 140px;
+   }
+   #social {
+      margin: 0;
+      left: 40px;
+      gap: 20px;
+   }
+   #social svg {
+      width: 50px;
+   }
    #apresentation h1 {
-      font-size: 2rem;
+      font-size: 2.3rem;
    } 
    #apresentation p {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
    }
-   #containerAbout {
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-      padding: 40px 90px;
+   #about {
+      flex-direction: row;
+      gap: 50px;
+      padding: 40px;
    }
 
-   #about, #skills {
-      width: 100%;
-      max-width: 600px;
-   }
-   
    #projects {
-      flex-direction: column;
+      flex-direction: row;
+      gap: 50px;
       height: 100%;
-      width: 100%;
-      gap: 40px;
-      padding: 50px;
-   }
-
-   #blockQuo, #quotes {
-      max-width: 600px;
-      width: 100%;
-   }
-   #quotes {
-      height: 100%;
-      min-height: 260px;
       padding: 20px;
    }
-   #quotes q {
-      font-size: 1.4rem;
+   
+   #projects article .face.face1,#projects article .face.face2  {
+      width: 450px;
+      height: 275px;
+      font-size: .9rem;
    }
-   #quotes #author {
-      font-size: 2rem;
+   #projects article .face.face1 {
+      transform: translateY(120px);
+   }
+   #projects article:hover .face.face1{
+      transform: translateY(0);
+   }
+   #projects article .face.face2 {
+      gap: unset;
+      justify-content: space-between;
+      transform: translateY(-100px);
+      margin-top: -6px;
+      padding-bottom: 10px;
+   }
+   #projects article:hover .face.face2 {
+      transform: translateY(0px);
+   }
+   .imgProject {
+      width: 100%;
+   }
+   #projects article .arrowCard {
+      display: block;
+   }
+   footer {
+      gap: unset;
+      justify-content: space-evenly;
    }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-   html{
-      overflow-x: hidden;
-      max-width: 100vw;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+   #view1 {
+      padding: 40px; 
+      grid-template-areas: 
+      "apre apre ."
+      ". blockQuo blockQuo";
+      grid-template-columns: 1.5fr 2fr 1fr;
+      grid-template-rows: 1fr 3fr;
    }
    .circle1 {
       width: 60px;
@@ -507,50 +634,10 @@
       right: -20%;
       top: -25%;
    }
-   .circle5 {
-      display: none;
-   }
    .circle6 {
       width: 110px;
       height: 110px;
       bottom: -10%;
       left: -50px;
    }
-   #social {
-      margin: 0;
-      left: 40px;
-   }
-   #social img {
-      width: 40px;
-   }
-   #apresentation h1 {
-      font-size: 2.3rem;
-   } 
-   #apresentation p {
-      font-size: 1.8rem;
-   }
-   #projects {
-      padding: 0px 40px;
-   }
-   #projects article {
-      width: 500px;
-   }
-   #projects article p {
-      width: 100%;
-   }
-   .imgProject {
-      width: 100%;
-   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-   
-}
-
-
-
-
-
-
-
-
